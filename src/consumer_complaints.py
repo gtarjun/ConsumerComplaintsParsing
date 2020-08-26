@@ -84,13 +84,13 @@ def get_data_for_company(company, data):
     return company_data
 
 def write_file(data, filename):
-    """ Reads the input data and unique companies and returns number of companies in data.
+    """ Writes tthe report on a csv file.
 
     Arguments:
-    data : List of dictionaries of complaints and unique companies.
+    data : Data to write, filename.
 
     Returns:
-    Companies in data.
+    Writes a report on a csv file.
     """
     data_to_write = [[d['Product'], d['Year'], d['Num_complaints'], d['Num_companies_with_complaints'], d['Percent_complaints'] ] for d in data]
     with open(filename, 'w') as write_it:
