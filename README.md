@@ -1,0 +1,1 @@
+This project takes all Consumer Complaints data and parses it based on Product complained against per year, the number of companies complained against and the percentage of highest complaints receieved against a company.
